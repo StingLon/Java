@@ -1,21 +1,3 @@
 das
-```
 
-
-    @Override
-    public Status save(TbUser tbUser) {
-        Status status= checked(tbUser);
-        if(status.getCode()== SUCCESS_CODE){
-            tbUser.setUpdated(new Date());
-
-           if(tbUser.getId()==null){
-               tbUser.setCreated(new Date());
-                 tbUserDao.insert(tbUser);
-           }else{
-               tbUserDao.update(tbUser);
-           }
-            status.setMsg("ok");
-        }
-        return status;
-    }
-```
+- sd 
